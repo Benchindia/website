@@ -3,7 +3,6 @@
 
     .cards {
         display: flex;
-        flex-wrap: wrap;
         gap: 20px;
 
         .card {
@@ -18,12 +17,18 @@
             .front {
                 background-color: #fff;
                 color: #000;
+                border: 1px solid black;
+                padding: 1rem;
+                border-radius: 10px;
             }
 
             .back {
-                background-color: #000;
-                color: #fff;
                 transform: rotateY(180deg);
+                background-color: #fff;
+                color: #000;
+                border: 1px solid black;
+                padding: 1rem;
+                border-radius: 10px;
             }
 
             &:hover .front {
