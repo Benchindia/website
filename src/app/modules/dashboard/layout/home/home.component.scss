@@ -1,7 +1,33 @@
 .home {
-    padding: 50px;
+    padding: 3rem 4rem;
     text-align: center;
-    background: url('/assets/images/monk-bg.jpg') no-repeat center center;
+    background: url(/assets/images/monk-bg.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-wrapper {
+    border: 1px solid #cacaca;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #ead2d2;
+    color: #fff;
+    opacity: .5;
+    width: 26rem;
+    color: black;
+    font-size: 1.15rem;
+    line-height: 1.25;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 18rem;
+        }
+    }
 }
