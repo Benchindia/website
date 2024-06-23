@@ -4,7 +4,7 @@
     background: url(/assets/images/monk-bg.jpg) no-repeat center center;
     background-size: cover;
     color: #fff;
-    height: 70vh;
+    height: calc(100vh - 10rem);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -12,22 +12,33 @@
 
 .section-wrapper {
     border: 1px solid #cacaca;
-    padding: 2rem;
-    border-radius: 5px;
-    background-color: #ead2d2;
-    color: #fff;
-    opacity: .5;
-    width: 26rem;
-    color: black;
-    font-size: 1.15rem;
-    line-height: 1.25;
+    padding: 3.5rem 4rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.78);
+    color: #333;
+    max-width: 42rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 
     .logo {
         display: flex;
         justify-content: center;
+        margin-bottom: 1rem;
 
         img {
-            width: 18rem;
+            max-width: 80%;
+            height: auto;
         }
+    }
+    
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+    .highlight {
+        font-weight: bold;
+        color: #35433b;
+        font-size: 1.4rem;
     }
 }
