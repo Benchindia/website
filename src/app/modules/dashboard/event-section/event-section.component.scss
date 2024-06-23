@@ -1,16 +1,44 @@
 .events {
     padding: 50px;
+    background-color: #A0DEFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .event-list {
         display: flex;
-        flex-wrap: wrap;
+        width: 70%;
         gap: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-        .event {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 10px;
+        .event-items {
+            width: 15%;
+            border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            .event {
+                // background-color: #f9f9f9;
+                padding: 20px;
+
+
+            }
+        }
+
+        .event-description {
+            padding: 1rem;
+            width: 50%;
+            .evnt-des {
+
+            }
         }
     }
+}
+
+.about-heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 2rem
 }

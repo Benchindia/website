@@ -1,6 +1,6 @@
 .about {
     padding: 50px;
-    height: calc(100vh - 10rem);
+    height: 63vh;
     background: #ecf2f8;
 
     .cards {
@@ -51,4 +51,10 @@
 .about-heading {
     text-align: center;
     font-size: 4rem;
+    margin-bottom: 2rem
+}
+
+.about-center {
+    text-align: center;
+    margin: 2rem;
 }

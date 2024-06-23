@@ -1,9 +1,25 @@
 <section class="events">
-    <h2>Events</h2>
+    <h2 class="about-heading">Fellowship</h2>
     <div class="event-list">
-        <div class="event">
-            <h3>Fellowship Program</h3>
-            <p>Details about the program...</p>
+        <div class="event-items">
+            <div class="event" (click)="itemClick($event,'Obj')">
+                Objectives
+            </div>
+            <div class="event" (click)="itemClick($event,'Cri')">
+                Criteria
+            </div>
+            <div class="event" (click)="itemClick($event,'Offer')">
+                We Offer
+            </div>
+            <div class="event" (click)="itemClick($event,'Expect')">
+                We Expect
+            </div>
+        </div>
+        <div class="event-description">
+            <div class="evnt-des" *ngIf="objective">Jithu bad boy</div>
+            <div class="evnt-des" *ngIf="criteria">Jithu is a bad boy</div>
+            <div class="evnt-des" *ngIf="weOffer">Jithu is pavam</div>
+            <div class="evnt-des" *ngIf="weExpect">Thenu loves jithu </div>
         </div>
         <!-- Repeat for other events -->
     </div>
