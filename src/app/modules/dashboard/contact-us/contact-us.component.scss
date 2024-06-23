@@ -1,0 +1,29 @@
+.contact-us {
+    padding: 50px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input,
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #555;
+            }
+        }
+    }
+}
