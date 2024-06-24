@@ -38,6 +38,15 @@
             flex-direction: column;
             gap: 20px;
 
+            .name-fields {
+                display: flex;
+                gap: 20px;
+            
+                .form-group {
+                    flex: 1;
+                }
+            }
+
             .form-group {
                 display: flex;
                 flex-direction: column;

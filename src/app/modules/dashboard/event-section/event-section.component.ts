@@ -8,19 +8,15 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
   standalone: true,
   imports: [CommonModule, RouterModule, CarouselModule],
   templateUrl: './event-section.component.html',
-  styleUrl: './event-section.component.scss'
+  styleUrls: ['./event-section.component.scss']
 })
 export class EventSectionComponent {
-
   objective: boolean = true;
   criteria: boolean = false;
   weOffer: boolean = false;
   weExpect: boolean = false;
 
-
-
   itemClick(event: any, value: any) {
-    console.log(event)
     if (event) {
       switch (value) {
         case 'Obj':
@@ -47,23 +43,23 @@ export class EventSectionComponent {
           this.weOffer = false;
           this.weExpect = true;
           break;
-
       }
     }
-
   }
 
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
+    autoplayTimeout: 2000,
     center: true,
     dots: false,
+    nav: true,
     responsive: {
       0: {
-        items: 3,
+        items: 1,
       },
       600: {
-        items: 3,
+        items: 2,
       },
       1000: {
         items: 3,
@@ -71,5 +67,3 @@ export class EventSectionComponent {
     }
   }
 }
-
-
