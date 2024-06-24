@@ -1,10 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, RouterModule],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.scss'
 })
@@ -21,6 +23,7 @@ export class ContactUsComponent {
   }
 
   onSubmit() {
+    console.log(this.contactForm)
     if (this.contactForm.valid) {
       console.log('Form Submitted!', this.contactForm.value);
       // Handle form submission, e.g., send the data to the server
