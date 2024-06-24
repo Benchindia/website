@@ -58,7 +58,7 @@
 
         .event-description {
             padding: 20px;
-            height: 19rem;
+            min-height: 19rem;
             background-color: white;
             border-radius: 0 0 10px 10px;
             
@@ -97,4 +97,10 @@
     li {
         font-weight: 500;
     }
+}
+
+
+
+.text {
+  color: white;
 }
