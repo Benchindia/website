@@ -2,13 +2,14 @@
 
 .events {
     padding: 50px;
-    background-color: #A0DEFF;
+    background-color: #1A2A3A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     .event-list {
+        margin-bottom: 2rem;
         display: flex;
         flex-direction: column;
         width: 70%;
@@ -41,24 +42,23 @@
 
             .event {
                 // background-color: #f9f9f9;
-                flex: 1;
-                padding: 20px;
+                padding: 15px;
                 font-weight: 700;
                 background-color: #f9f9f9;
                 border: none;
                 cursor: pointer;
                 transition: background-color 0.3s ease, color 0.3s ease;
-                &:hover,
                 &.active {
-                    background-color: #A0DEFF;
+                    background-color: #1A2A3A;
                     color: white;
+                    border-radius: 7px;
                 }
             }
         }
 
         .event-description {
-            flex: 1;
             padding: 20px;
+            height: 19rem;
             background-color: white;
             border-radius: 0 0 10px 10px;
             
@@ -70,7 +70,31 @@
 }
 
 .about-heading {
+    color: #ffff;
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.section-heading-wrap {
+    display: flex;
+    gap: 1rem;
+}
+
+.flow {
+    width: 10rem;
+    height: 9rem;
+}
+
+.evnt-des {
+    ol {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    li {
+        font-weight: 500;
+    }
 }
