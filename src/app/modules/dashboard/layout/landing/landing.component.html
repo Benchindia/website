@@ -4,24 +4,26 @@
             <img src="assets/images/logo-big-new.png" alt="logo">
         </div>
         <div class="menu-section">
-            <div class="menu">
+            <div class="menu" (click)="scrollToSection('home')">
                 Home
             </div>
-            <div class="menu">
+            <div class="menu" (click)="scrollToSection('about-us')">
                 About Us
             </div>
-            <div class="menu">
+            <div class="menu" (click)="scrollToSection('fellowship')">
                 Fellowship
             </div>
         </div>
-        <div class="contact-us">
+        <div class="contact-us" (click)="scrollToSection('contact-us')">
             <img src="assets/images/mail.svg" alt="mail">
             <p>Contact Us</p>
         </div>
     </div>
 </nav>
-<app-home />
-<app-about-us />
-<app-event-section />
-<app-contact-us />
+<app-home id="home" />
+<section class="parallax1"></section>
+<app-about-us id="about-us"/>
+<section class="parallax2"></section>
+<app-event-section id="fellowship"/>
+<app-contact-us id="contact-us"/>
 <app-footer />

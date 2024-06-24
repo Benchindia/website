@@ -10,10 +10,15 @@ import { ContactUsComponent } from '../../contact-us/contact-us.component';
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule, RouterModule,FooterComponent,HomeComponent, AboutUsComponent, EventSectionComponent, ContactUsComponent],
+  imports: [CommonModule, RouterModule, FooterComponent, HomeComponent, AboutUsComponent, EventSectionComponent, ContactUsComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-
+  scrollToSection(section: string) {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
