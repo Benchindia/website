@@ -1,3 +1,12 @@
+.parallax2 {
+    height: 50rem;
+    background: url(/assets/images/bg-3.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .events {
     padding: 50px;
     background-color: #A0DEFF;
@@ -29,10 +38,7 @@
 
         .event-description {
             padding: 1rem;
-            width: 50%;
-            .evnt-des {
-
-            }
+            width: 50%; 
         }
     }
 }
