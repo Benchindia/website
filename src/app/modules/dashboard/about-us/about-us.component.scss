@@ -9,13 +9,15 @@
 
 .about {
     padding: 50px;
-    height: 63vh;
+    padding-top: 15px;
+    height: 66vh;
     background: #ecf2f8;
 
     .cards {
         display: flex;
         gap: 5rem;
         justify-content: center;
+        margin-top: 2rem;
 
         .card {
             perspective: 1000px;
@@ -60,10 +62,12 @@
 .about-heading {
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 2rem
+    margin-bottom: 0rem
 }
 
 .about-center {
     text-align: center;
-    margin: 2rem;
+    margin: 0 auto;
+    max-width: 32rem;
+    margin-top: 1rem;
 }
