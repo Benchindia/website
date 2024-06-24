@@ -1,19 +1,18 @@
-
 <section class="events">
     <h2 class="about-heading">Fellowship</h2>
     <div class="event-list">
         <div class="event-items">
-            <div class="event" (click)="itemClick($event,'Obj')">
-                Objectives
+            <div class="event" (click)="itemClick($event,'Obj')" [class.active]="objective">
+                <span>Objectives</span>
             </div>
-            <div class="event" (click)="itemClick($event,'Cri')">
-                Criteria
+            <div class="event" (click)="itemClick($event,'Cri')" [class.active]="criteria">
+                <span>Criteria</span>
             </div>
-            <div class="event" (click)="itemClick($event,'Offer')">
-                We Offer
+            <div class="event" (click)="itemClick($event,'Offer')" [class.active]="weOffer">
+                <span>We Offer</span>
             </div>
-            <div class="event" (click)="itemClick($event,'Expect')">
-                We Expect
+            <div class="event" (click)="itemClick($event,'Expect')" [class.active]="weExpect">
+                <span>We Expect</span>
             </div>
         </div>
         <div class="event-description">
