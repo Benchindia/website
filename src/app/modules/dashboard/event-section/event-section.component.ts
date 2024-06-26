@@ -53,7 +53,7 @@ export class EventSectionComponent {
     autoplayTimeout: 2000,
     center: true,
     dots: false,
-    nav: true,
+    nav: false,
     responsive: {
       0: {
         items: 1,
