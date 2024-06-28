@@ -1,2 +1,29 @@
-<p>landing works!</p>
-<app-footer>
+<nav class="nav-bar">
+    <div class="nav-section">
+        <div class="logo">
+            <img src="assets/images/logo-big-new.png" alt="logo">
+        </div>
+        <div class="menu-section">
+            <div class="menu" (click)="scrollToSection('home')">
+                Home
+            </div>
+            <div class="menu" (click)="scrollToSection('about-us')">
+                About Us
+            </div>
+            <div class="menu" (click)="scrollToSection('fellowship')">
+                Fellowship
+            </div>
+        </div>
+        <div class="contact-us" (click)="scrollToSection('contact-us')">
+            <img src="assets/images/mail.svg" alt="mail">
+            <p>Contact Us</p>
+        </div>
+    </div>
+</nav>
+<app-home id="home" />
+<section class="parallax1"></section>
+<app-about-us id="about-us"/>
+<section class="parallax2"></section>
+<app-event-section id="fellowship"/>
+<app-contact-us id="contact-us"/>
+<app-footer />

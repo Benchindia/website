@@ -1,0 +1,76 @@
+
+.about {
+    padding: 50px;
+    padding-top: 15px;
+    height: 66vh;
+    background: #ecf2f8;
+
+    .cards {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+        margin-top: 2rem;
+        // transform-style: preserve-3d;
+
+        .card {
+            perspective: 1000px;
+            width: 20rem;
+            position: relative;
+
+            .front,
+            .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 9rem;
+                backface-visibility: hidden;
+                transition: transform 0.6s ease-in-out;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                background-color: #fff;
+                color: #000;
+                border: 1px solid #e3dddd;
+                padding: 1rem;
+                border-radius: 10px;
+                box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+            }
+
+            .back {
+                transform: rotateY(180deg);
+            }
+
+            &:hover .front {
+                transform: rotateY(180deg);
+            }
+
+            &:hover .back {
+                transform: rotateY(0deg);
+            }
+        }
+    }
+}
+
+.about-heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0rem
+}
+
+.about-center {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 32rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.flip-icon {
+    width: 2rem;
+    height: 2rem;
+    right: 0px;
+    position: absolute;
+    bottom: 10px;
+}

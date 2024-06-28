@@ -1,0 +1,71 @@
+.nav-bar {
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensure the nav bar stays above other content */
+    padding: 1rem 4rem;
+    border-bottom: 2px solid #088395;
+    background: #ecf2f8;
+
+    .nav-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            img {
+                width: 6rem;
+            }
+        }
+
+        .menu-section {
+            display: flex;
+            gap: 3rem;
+            cursor: pointer;
+
+            .menu {
+                font-weight: 600;
+                color: #35433b;
+            }
+        }
+
+        .contact-us {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                font-weight: 600;
+                color: #35433b;
+            }
+        }
+    }
+
+}
+
+.set-margin {
+    margin-top: 2rem;
+}
+
+.parallax1 {
+    height: 40rem;
+    background: url(/assets/images/bg-6.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax2 {
+    height: 50rem;
+    background: url(/assets/images/bg-3.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
