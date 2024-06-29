@@ -4,20 +4,28 @@
     </div>
     <div class="event-list">
         <div class="event-items">
+            <div class="event" (click)="itemClick($event,'Abt')" [class.active]="about">
+                <span>About</span>
+            </div>
             <div class="event" (click)="itemClick($event,'Obj')" [class.active]="objective">
                 <span>Objectives</span>
             </div>
             <div class="event" (click)="itemClick($event,'Cri')" [class.active]="criteria">
                 <span>Criteria</span>
             </div>
-            <div class="event" (click)="itemClick($event,'Offer')" [class.active]="weOffer">
-                <span>We Offer</span>
-            </div>
-            <div class="event" (click)="itemClick($event,'Expect')" [class.active]="weExpect">
-                <span>We Expect</span>
-            </div>
         </div>
         <div class="event-description">
+            <div class="evnt-des" *ngIf="about">
+                <p>Bench Fellowship is a part time fellowship designed for college students in Kerala. Its core aim
+                    revolves around uncovering the finest qualities in young individuals and facilitating their
+                    engagement within their communities. Bench Fellowship serves as a window, which helps to see the
+                    inner self of each student and open the creative intervention to
+                    the life of human being. This initiative offers a platform for the development of four crucial
+                    aspects of life such as mental health, emotional intelligence, creativity, and social
+                    interactions/life. This Fellowship program functions as a joint program with Anjappam charitable
+                    trust Pathanamthitta.
+                </p>
+            </div>
             <div class="evnt-des" *ngIf="objective">
                 <ol>
                     <li>To create a space conducive to sharing thoughts and feelings.</li>
@@ -34,22 +42,6 @@
                     <li>This is a part-time fellowship programme.</li>
                     <li>Takes 40-60 days and concludes within 18 months.</li>
                     <li>From one department a maximum of 3-5 students can join (male & female)</li>
-                </ol>
-            </div>
-            <div class="evnt-des" *ngIf="weOffer">
-                <ol>
-                    <li>Expert training in personal and professional growth.</li>
-                    <li>Participation certificates for both the department and its students.</li>
-                    <li>Real-life experience among rural communities, children, and youth.</li>
-                    <li>Ensures your skill development.</li>
-                    <li>Funds will be provided by Team Bench.</li>
-                    <li>Camp for the program will be conducted according to the time and availability of students.</li>
-                </ol>
-            </div>
-            <div class="evnt-des" *ngIf="weExpect">
-                <ol>
-                    <li>Active participation and collaboration of the department.</li>
-                    <li>Continuous participation of students.</li>
                 </ol>
             </div>
         </div>
@@ -101,7 +93,7 @@
     </div>
     <h2 class="about-heading">Watch Our Video</h2>
     <div class="video-section">
-        <video controls autoplay muted loop>
+        <video controls muted loop controlslist="nodownload">
             <source src="./../../../../assets/images/short-video-comp.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
