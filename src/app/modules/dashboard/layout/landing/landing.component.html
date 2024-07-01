@@ -1,7 +1,7 @@
 <nav class="nav-bar">
     <div class="nav-section">
         <div class="logo">
-            <img src="assets/images/logo-big-new.png" alt="logo">
+            <img src="assets/images/logo-small.png" alt="logo">
         </div>
         <div class="menu-section">
             <div class="menu" (click)="scrollToSection('home')">
@@ -10,8 +10,11 @@
             <div class="menu" (click)="scrollToSection('about-us')">
                 About Us
             </div>
-            <div class="menu" (click)="scrollToSection('fellowship')">
-                Fellowship
+            <div class="menu" (click)="scrollToSection('event')">
+                Events
+            </div>
+            <div class="menu not-allowed" (click)="scrollToSection('')">
+                User Login
             </div>
         </div>
         <div class="contact-us" (click)="scrollToSection('contact-us')">
@@ -22,8 +25,8 @@
 </nav>
 <app-home id="home" />
 <section class="parallax1"></section>
-<app-about-us id="about-us"/>
+<app-about-us id="about-us" />
 <section class="parallax2"></section>
-<app-event-section id="fellowship"/>
-<app-contact-us id="contact-us"/>
+<app-event-section id="event" />
+<app-contact-us id="contact-us" />
 <app-footer />

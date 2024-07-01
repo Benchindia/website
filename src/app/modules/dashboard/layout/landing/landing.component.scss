@@ -16,7 +16,7 @@
 
         .logo {
             img {
-                width: 6rem;
+                width: 2.5rem;
             }
         }
 
@@ -27,7 +27,12 @@
 
             .menu {
                 font-weight: 600;
+                font-size: 1.5rem;
                 color: #35433b;
+            }
+
+            .not-allowed{
+                cursor: not-allowed;
             }
         }
 
@@ -40,6 +45,7 @@
             p {
                 margin: 0;
                 font-weight: 600;
+                font-size: 1.5rem;
                 color: #35433b;
             }
         }
