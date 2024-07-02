@@ -16,24 +16,13 @@
         background-color: white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
-        @media (min-width: 768px) {
-            flex-direction: row;
-        }
-
         .event-items {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            width: 100%;
+            width: 96%;
             padding: 1rem;
             background-color: #f9f9f9;
             border-radius: 10px 10px 0 0;
-
-            @media (min-width: 768px) {
-                flex-direction: column;
-                width: 20%;
-                border-radius: 10px 0 0 10px;
-            }
 
             .event {
                 padding: 15px;
@@ -42,6 +31,8 @@
                 border: none;
                 cursor: pointer;
                 transition: background-color 0.3s ease, color 0.3s ease;
+                width: 5rem;
+                text-align: center;
 
                 &.active {
                     background-color: #1A2A3A;
@@ -57,9 +48,6 @@
             background-color: white;
             border-radius: 0 0 10px 10px;
 
-            @media (min-width: 768px) {
-                border-radius: 0 10px 10px 0;
-            }
         }
 
         .flow {
