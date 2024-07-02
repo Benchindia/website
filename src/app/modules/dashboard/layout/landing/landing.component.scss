@@ -1,10 +1,8 @@
 .nav-bar {
     position: -webkit-sticky;
-    /* For Safari */
     position: sticky;
     top: 0;
-    z-index: 1000;
-    /* Ensure the nav bar stays above other content */
+    z-index: 20;
     padding: 1rem 4rem;
     border-bottom: 2px solid #088395;
     background: #ecf2f8;
