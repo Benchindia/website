@@ -1,22 +1,20 @@
 .home {
     position: relative;
-    padding: 0rem 4rem 4rem 3rem;
+    padding: 2rem 1rem;
     text-align: center;
     background: url(/assets/images/monk-transparent-2.png) no-repeat center center;
     background-size: cover;
     color: #fff;
-    height: calc(100vh - 10rem);
+    min-height: calc(100vh - 60px); // Assuming navbar height is 60px
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    overflow-x: hidden; // Prevent horizontal scrolling
 
-    @media screen and (max-width: 1100px) {
-        flex-direction: column;
-        height: auto;
-        padding: 0rem;
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+        justify-content: flex-start;
     }
-
-
 }
 
 .home::before {
@@ -27,20 +25,42 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    /* Adjust opacity as needed */
-    // z-index: 1;
+    z-index: 1;
+}
+
+.section-cnr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 2;
+
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+    }
 }
 
 .section-wrapper {
     position: relative;
     z-index: 2;
-    padding: 3.5rem 4rem;
+    padding: 2rem;
     border-radius: 10px;
     color: #d9d9d9;
-    max-width: 25rem;
-    font-size: 1.5rem;
+    max-width: 100%;
+    font-size: 1rem;
     line-height: 1.6;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: 768px) {
+        padding: 3.5rem 4rem;
+        max-width: 25rem;
+        font-size: 1.5rem;
+    }
 
     .logo {
         display: flex;
@@ -48,8 +68,14 @@
         margin-bottom: 1rem;
 
         img {
-            max-width: 28rem;
+            max-width: 100%;
             height: auto;
+            max-height: 10rem;
+
+            @media screen and (min-width: 768px) {
+                max-width: 28rem;
+                max-height: none;
+            }
         }
     }
 
@@ -60,37 +86,32 @@
     .highlight {
         font-weight: bold;
         color: #fff;
-        font-size: 1.4rem;
-    }
-}
+        font-size: 1.2rem;
 
-.section-cnr {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 22rem;
-    width: 100%;
-
-    @media screen and (max-width: 1100px) {
-        flex-direction: column;
-        gap: 0rem;
+        @media screen and (min-width: 768px) {
+            font-size: 1.4rem;
+        }
     }
 }
 
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
     align-items: center;
-    margin-top: 2rem;
-    padding: 3rem;
-    position: relative;
-    border-radius: 15px;
+    width: 100%;
+    padding: 1rem;
+
+    @media screen and (min-width: 768px) {
+        gap: 3rem;
+        padding: 2rem;
+    }
 }
 
 .card {
     perspective: 1000px;
-    width: 18rem;
+    width: 100%;
+    max-width: 18rem;
     height: 7rem;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -120,21 +141,23 @@
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-
     background-color: #f3dcdc;
     backdrop-filter: blur(10px);
-    // Subtle dot pattern for cards container
     background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, #0000001a 1px);
     background-size: 20px 20px;
 }
 
 .front {
     h3 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
         color: #333;
         position: relative;
         z-index: 1;
+
+        @media screen and (min-width: 768px) {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -142,11 +165,15 @@
     transform: rotateY(180deg);
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1.4;
         color: #444;
         position: relative;
         z-index: 1;
+
+        @media screen and (min-width: 768px) {
+            font-size: 0.9rem;
+        }
     }
 }
 
@@ -159,9 +186,16 @@
 }
 
 .flip-icon {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
-    bottom: 10px;
-    right: 0px;
+    bottom: 5px;
+    right: 5px;
+
+    @media screen and (min-width: 768px) {
+        width: 2rem;
+        height: 2rem;
+        bottom: 10px;
+        right: 10px;
+    }
 }

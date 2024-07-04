@@ -3,7 +3,17 @@
         <div class="logo">
             <img src="assets/images/logo-small.png" alt="logo">
         </div>
-        <div class="menu-section">
+        <div class="menu-toggle" (click)="toggleMenu()">
+            <div class="hamburger" [class.hidden]="isMenuOpen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="close-icon" [class.visible]="isMenuOpen">
+                &#10005;
+            </div>
+        </div>
+        <div class="menu-section" [class.active]="isMenuOpen">
             <div class="menu" (click)="scrollToSection('home')">
                 Home
             </div>
@@ -16,10 +26,10 @@
             <div class="menu not-allowed" (click)="scrollToSection('')">
                 User Login
             </div>
-        </div>
-        <div class="contact-us" (click)="scrollToSection('contact-us')">
-            <img src="assets/images/mail.svg" alt="mail">
-            <p>Contact Us</p>
+            <div class="contact-us" (click)="scrollToSection('contact-us')">
+                <img src="assets/images/mail.svg" alt="mail">
+                <p>Contact Us</p>
+            </div>
         </div>
     </div>
 </nav>

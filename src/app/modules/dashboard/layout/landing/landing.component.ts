@@ -15,10 +15,19 @@ import { ContactUsComponent } from '../../contact-us/contact-us.component';
   styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-  scrollToSection(section: string) {
-    const element = document.getElementById(section);
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  scrollToSection(sectionId: string) {
+    // Implement your scrolling logic here
+    // For example:
+    const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    this.isMenuOpen = false; // Close menu after clicking
   }
 }
