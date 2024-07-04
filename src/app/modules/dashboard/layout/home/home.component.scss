@@ -9,6 +9,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        height: auto;
+        padding: 0rem;
+    }
+
+
 }
 
 .home::before {
@@ -44,7 +52,7 @@
             height: auto;
         }
     }
-    
+
     p {
         margin-bottom: 1.5rem;
     }
@@ -62,6 +70,11 @@
     align-items: center;
     gap: 22rem;
     width: 100%;
+
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        gap: 0rem;
+    }
 }
 
 .cards {
@@ -109,10 +122,10 @@
     overflow: hidden;
 
     background-color: #f3dcdc;
-        backdrop-filter: blur(10px);
-        // Subtle dot pattern for cards container
-        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, #0000001a 1px);
-        background-size: 20px 20px;
+    backdrop-filter: blur(10px);
+    // Subtle dot pattern for cards container
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, #0000001a 1px);
+    background-size: 20px 20px;
 }
 
 .front {

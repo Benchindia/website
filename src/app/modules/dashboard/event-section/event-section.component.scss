@@ -118,3 +118,14 @@
 .text {
     color: white;
 }
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    video {
+        width: 90%;
+    }
+}
