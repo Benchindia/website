@@ -137,8 +137,7 @@
 
 .parallax1 {
     height: 40rem;
-    // background: url(/assets/images/bg-8.jpg) no-repeat center center;
-    // background-attachment: fixed;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -146,10 +145,19 @@
 
 
 .parallax2 {
-    height: 50rem;
-    // background: url(/assets/images/bg-7.jpg) no-repeat center center;
-    // background-attachment: fixed;
+    height: 40rem;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
+}
+
+@media (max-width: 768px) {
+
+    .parallax1,
+    .parallax2 {
+        background-attachment: scroll;
+    }
 }
