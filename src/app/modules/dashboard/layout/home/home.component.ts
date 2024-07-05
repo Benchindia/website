@@ -9,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  homeImg = 'assets/images/monk-transparent-2.png';
+
 }

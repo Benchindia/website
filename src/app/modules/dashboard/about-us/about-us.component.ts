@@ -11,6 +11,7 @@ export class AboutUsComponent {
   about: boolean = true;
   objective: boolean = false;
   criteria: boolean = false;
+  fellowAi= 'assets/images/fellowship-ai.jpg'
 
   itemClick(event: any, value: any) {
     if (event) {

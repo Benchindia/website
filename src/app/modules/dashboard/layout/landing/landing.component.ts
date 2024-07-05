@@ -17,6 +17,10 @@ import { ContactUsComponent } from '../../contact-us/contact-us.component';
 export class LandingComponent {
   isMenuOpen = false;
 
+  parallax1Image = 'assets/images/bg-8.jpg';
+  parallax2Image = 'assets/images/bg-7.jpg';
+
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }

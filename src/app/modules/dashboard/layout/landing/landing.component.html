@@ -34,9 +34,9 @@
     </div>
 </nav>
 <app-home id="home" />
-<section class="parallax1"></section>
+<section class="parallax1" [ngStyle]="{'background-image': 'url(' + parallax1Image + ')'}"></section>
 <app-about-us id="about-us" />
-<section class="parallax2"></section>
+<section class="parallax2" [ngStyle]="{'background-image': 'url(' + parallax2Image + ')'}"></section>
 <app-event-section id="event" />
 <app-contact-us id="contact-us" />
 <app-footer />
