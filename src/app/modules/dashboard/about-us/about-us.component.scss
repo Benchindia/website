@@ -182,18 +182,24 @@
     text-align: center;
 }
 
+.download-icon {
+    filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(223deg) brightness(97%) contrast(107%);
+}
 
 .bro-btn {
     background-color: #D4A017;
     color: #1A2A3A;
     padding: 15px 20px;
     border: 2px solid #1A2A3A;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 13px;
-    font-weight: bold;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    gap: 10px;
     text-decoration: none;
-    display: inline-block;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 
