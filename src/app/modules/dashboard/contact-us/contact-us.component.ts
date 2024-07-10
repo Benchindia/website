@@ -45,7 +45,7 @@ export class ContactUsComponent {
       message: this.baseForm.value.message,
     };
 
-    emailjs.send('service_bench', 'template_ul6sy2f', templateParams, 'MPz4x7-DheEnqC1-6')
+    emailjs.send('service_6chduek', 'template_e8fl42t', templateParams, 't6z3BX_yZSuWHekGU')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Your message has been sent successfully!');
