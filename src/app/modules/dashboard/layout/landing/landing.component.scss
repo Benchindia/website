@@ -161,3 +161,40 @@
         background-attachment: scroll;
     }
 }
+
+.scrolling-text {
+    position: sticky;
+    top: 0; // Stick right under the navbar
+    width: 100%;
+    background-color: #ecf2f8; // Background color of the text area
+    color: #28680e; // Text color
+    padding: 0.5rem 0;
+    white-space: nowrap;
+    overflow: hidden; // Hide the text once it moves out of the container
+    z-index: 10;
+    font-weight: bold;
+
+    p {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scroll-text 30s linear infinite; // Adjust the duration as needed
+    }
+
+    @keyframes scroll-text {
+        0% {
+            transform: translateX(100%); // Start with the text off-screen on the right
+        }
+
+        100% {
+            transform: translateX(-100%); // Move the text fully to the left and off-screen
+        }
+    }
+}
+
+.scrolling-text-p{
+    margin: 0;
+}
+
+.scrolling-text-black{
+    color: #000;
+}
