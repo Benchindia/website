@@ -182,7 +182,7 @@
 
     @keyframes scroll-text {
         0% {
-            transform: translateX(100%); // Start with the text off-screen on the right
+            transform: translateX(10%); // Start with the text off-screen on the right
         }
 
         100% {
