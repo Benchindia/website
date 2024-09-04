@@ -189,6 +189,13 @@
             transform: translateX(-100%); // Move the text fully to the left and off-screen
         }
     }
+
+    // Media query for mobile devices
+    @media screen and (max-width: 768px) {
+        top: calc(3rem + 0.5rem); // Adjust based on your navbar height for mobile view
+        position: sticky;
+        padding: 0.75rem 0; // Add extra padding if needed
+    }
 }
 
 .scrolling-text-p{
